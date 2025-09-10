@@ -33,8 +33,6 @@ print()
 # Write your code here:
 
 
-
-
 print("=" * 30)
 
 # Question 1.2
