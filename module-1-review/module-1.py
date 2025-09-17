@@ -278,9 +278,9 @@ print(f"You were probably born in {birth_year}")
 age = int(input('Please input your age: '))
 current_year = int(input('Please input the current year: '))
 
-birth_year = current_year - age
+birth_year: int = current_year - age
 
-print('You were probably born in', birth_year)
+print(f'You were probably born in', {birth_year})
 
 
 
@@ -331,17 +331,26 @@ milk = 4.99
 chicken = 10.99
 mangoes = 4.35
 
-tax = 0.08
-discount = 0.1
+tax_rate = 0.085
+discount_rate = 0.1
 
-total = eggs + milk + chicken + mangoes
-tax = total * tax
-total = tax + total
-discount = total * discount
-total = total - discount
+subtotal = eggs + milk + chicken + mangoes
+tax_amount = subtotal * tax_rate
+discount_amount = subtotal * discount_rate
 
-print(total)
+final_total = (subtotal + tax_amount) - discount_amount
 
+print('---- RECEIPT ----')
+print(f'Eggs:       {eggs}')
+print(f'Milk:       {milk}')
+print(f'Chicken:    {chicken}')
+print(f'Mangoes:    {mangoes}')
+print('-----------------')
+print(f'Subtotal:   {round(subtotal, 2)}')
+print(f'Tax:        {round(tax_amount, 2)}')
+print(f'Discount:   {round(discount_amount, 2)}')
+print('-----------------')
+print(f'TOTAL:      {round(final_total, 2)}')
 
 
 
@@ -384,6 +393,52 @@ else:
 print(f"Letter Grade: {letter_grade}")
 
 # Challenge: Calculate GPA for 4 courses with different credit hours.
+history_credit_hours = 3
+math_credit_hours = 5
+chemistry_credit_hours = 4
+elective_credit_hours = 2
+
+total_credit_hours = history_credit_hours + math_credit_hours + chemistry_credit_hours + elective_credit_hours
+
+history_grade = 95
+math_grade = 80
+chemistry_grade = 83
+elective_grade = 100
+
+history_weighted = history_credit_hours * history_grade
+math_weighted = math_credit_hours * math_grade
+chemistry_weighted = chemistry_credit_hours * chemistry_grade
+elective_weighted = elective_credit_hours * elective_grade
+
+total_weighted = history_weighted + math_weighted + chemistry_weighted + elective_weighted
+
+gpa = total_weighted / total_credit_hours
+
+if gpa >= 93:
+    gpa_points = 4.0
+elif gpa >= 90:
+    gpa_points = 3.7
+elif gpa >= 87:
+    gpa_points = 3.3
+elif gpa >= 83:
+    gpa_points = 3.0
+elif gpa >= 80:
+    gpa_points = 2.7
+elif gpa >= 77:
+    gpa_points = 2.3
+elif gpa >= 73:
+    gpa_points = 2.0
+elif gpa >= 70:
+    gpa_ponts = 1.7
+elif gpa >= 67:
+    gpa_points = 1.3
+elif gpa >= 65:
+    gpa_points = 1.0
+else:
+    gpa_points = 0.0
+
+print('\n')
+print(f'Your GPA is {gpa_points}')
 
 
 
@@ -411,7 +466,13 @@ distance = 0.5 * GRAVITY * time ** 2
 print(f"Object falls {distance:.1f} meters in {time} seconds")
 
 # Challenge: Calculate the volume of a cylinder (π * r² * h).
+PI = 3.14159
+radius = 5
+height = 7
 
+cylinder_volume = PI * radius * radius * height
+
+print(f'The volume of a cylinder that has a radius of 5 and a height of 7 is {round(cylinder_volume, 2)}')
 
 
 
@@ -441,6 +502,11 @@ items_in_cart = 5    # Better than: x = 5  # number of items
 print(f"Total cost: ${total:.2f}")
 
 # Challenge: Write a well-commented program that converts temperature.
+farenheit = 75             
+celcius = (farenheit - 32) * (5/9)  #calculating conversion from farenheit to celcius
+
+print(str(farenheit) + '°F is equal to ' + str(round(celcius,2)), '°C')
+
 
 
 
@@ -524,7 +590,13 @@ report: str = f"Student: {full_name} (ID: {student_id})\nAverage Score: {average
 print(report)
 
 # Challenge: Create variables with type hints for a book record (title, author, pages, price, in_stock).
+title: str = 'The Hunger Games'
+author: str = 'Suzanne Collins'
+pages: int = 374
+price: float = 9.99
+in_stock: int = 5
 
+print(f'{title} by {author} has {pages} pages. There are currently {in_stock} copies for ${price} each.')
 
 
 
