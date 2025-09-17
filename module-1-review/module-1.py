@@ -589,7 +589,7 @@ report: str = f"Student: {full_name} (ID: {student_id})\nAverage Score: {average
 
 print(report)
 
-# Challenge: Create variables with type hints for a book record (title, author, pages, price, in_stock).
+# Challenge: Create variables with type hints for a book record (title, author, pages, price, in_stock). 
 title: str = 'The Hunger Games'
 author: str = 'Suzanne Collins'
 pages: int = 374
