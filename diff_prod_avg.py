@@ -35,6 +35,7 @@ def main():
     # Write a statement to print the average of x and y. Make sure this prints 7.5!
     print ('(', x, '+', y, ') / 2 =', average)
 
+
 if __name__ == '__main__':
     main()
 
