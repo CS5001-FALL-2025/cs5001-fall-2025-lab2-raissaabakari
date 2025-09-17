@@ -31,6 +31,9 @@ print("Expected output: 25, Boston")
 print()
 
 # Write your code here:
+age = 25            #assigning the variables in this line and the next
+city = 'Boston'     
+print(str(age) + ', ' + city)    #printing the output
 
 
 print("=" * 30)
@@ -42,7 +45,11 @@ print("Assign them appropriate values and print each one on a separate line.")
 print()
 
 # Write your code here:
+first_name = 'Raissa'     #assigning the variables in this line and the next two
+last_name = 'Bakari'
+student_id = '002508199'
 
+print(first_name + '\n' + last_name + '\n' + student_id)    #printing the output
 
 
 
@@ -56,7 +63,10 @@ print("Expected output: 68")
 print()
 
 # Write your code here:
+temperature = 72        #initially assigning the variable as 72
+temperature = 68        #reassigning the variable's value to 68
 
+print(temperature)      #printing the output
 
 
 
@@ -78,6 +88,16 @@ print("Expected output: 19, 11, 60, 3.75, 3")
 print()
 
 # Write your code here:
+x = 15              #assigning the variables on this line and the next
+y = 4
+
+add = x + y         #calculating sum
+subtract = x - y    #calculating difference
+product = x * y     #calculating product
+quotient = x / y    #calculating quotient
+remainder = x % y   #calculating remainder
+
+print(str(add) + ', ' + str(subtract) + ', ' + str(product) + ', ' + str(quotient) + ', ' + str(remainder))   #printing the output
 
 
 
@@ -92,7 +112,11 @@ print("Expected output: 96")
 print()
 
 # Write your code here:
+length = 12              #assigning variable on this line and the next
+width = 8
+area = length * width    #calculating area
 
+print(area)              #printing the output
 
 
 
@@ -106,7 +130,12 @@ print("Expected output: 11.03")
 print()
 
 # Write your code here:
+money = 50.00        #assigning variables on this line and the next 
+item = 12.99
 
+money = money - (item * 3) #calculating final total of money
+
+print(round(money, 2))            #printing the output
 
 
 
@@ -120,7 +149,9 @@ print("Expected output: 88.0")
 print()
 
 # Write your code here:
+average = (85 + 92 + 78 + 96 + 89) / 5   #assigning variable and calculating average of scores
 
+print(average)          #printing the output
 
 
 
@@ -138,7 +169,11 @@ print("Example output: John Q. Smith")
 print()
 
 # Write your code here:
+first_name = 'Raissa '           #assigning variables on this line and the next two
+middle_initial = 'A.P.'
+last_name = ' Bakari'
 
+print(first_name + middle_initial + last_name) #printing the output
 
 
 
@@ -152,7 +187,10 @@ print("Expected output: Hello Sarah, you are 20 years old!")
 print()
 
 # Write your code here:
+name = 'Sarah'      #assigning variables on this line and the next
+age = 20
 
+print('Hello ' + name + ', you are ' + str(age) + ' years old!')    #printing the output
 
 
 
@@ -166,7 +204,10 @@ print("Example: 'The book To Kill a Mockingbird was written by Harper Lee.'")
 print()
 
 # Write your code here:
+book_title = 'The Odyssey'  #assigning variables on this line and the next
+book_author = 'Homer'
 
+print('The book ' + book_title + ' was written by ' + book_author + '.')    #printing the output
 
 
 
@@ -186,6 +227,18 @@ print("Example: '24 + 6 = 30'")
 print()
 
 # Write your code here:
+num1 = 24       #assigning variables on this line and the next
+num2 = 6
+
+add = num1 + num2       #calculating addition
+subtract = num1 - num2  #calculating subtraction
+multiply = num1 * num2  #calculating multiplication
+divide = num1 / num2    #calculating division
+
+print(num1, '+', num2, '=', add)    #printing the output on this line and the next 3
+print(num1, '-', num2, '=', subtract)
+print(num1, '*', num2, '=', multiply)
+print(num1, '/', num2, '=', divide)
 
 
 
@@ -203,6 +256,14 @@ print("Expected: Tip: $8.19, Total: $53.69")
 print()
 
 # Write your code here:
+bill = 45.50        #assigning variables on this line and the next
+tip = 0.18
+
+tip_total = bill * tip          #calculating tip
+final_bill = tip_total + bill   #calculating final bill
+
+
+print('Tip: $' + str(tip_total) + ', Total: $' + str(final_bill))    #printing the output
 
 
 
@@ -220,6 +281,14 @@ print("Format: 'Student: Alex Johnson | Scores: 87, 92, 85 | Average: 88.0'")
 print()
 
 # Write your code here:
+name = 'Alex Johnson'   #assigning variables on this line and the next two
+test1 = 87
+test2 = 92
+test3 = 85
+
+average = (test1 + test2 + test3) / 3   #calculating average of tests
+
+print('Student: ' + name +' | Scores: ' + str(test1) + ', ' + str(test2) + ', ' + str(test3) + ' | Average: ' + str(average))  #printing the output
 
 
 
@@ -237,6 +306,19 @@ print("- Print a formatted receipt")
 print()
 
 # Write your code here:
+apples = 3.99       #assigning variables on this line and the next three
+bread = 2.50
+milk = 4.25
+tax = 0.085
+
+total = apples + bread + milk   #calculating subtotal
+tax = total * tax               #calculating tax
+total = total + tax             #calculating final total
+
+print('Apples: $' + str(apples))     #printing the output on this line and the next three
+print('Bread: $' + str(bread))
+print('Milk: $' + str(milk))
+print('Your total with tax is $' + str(round(total, 2)))
 
 
 
@@ -257,6 +339,10 @@ print("Expected: 75°F is equal to 23.89°C")
 print()
 
 # Write your code here:
+farenheit = 75             #assigning variable
+celcius = (farenheit - 32) * (5/9)  #calculating conversion from farenheit to celcius
+
+print(str(farenheit) + '°F is equal to ' + str(round(celcius,2)), '°C')   #printing the output
 
 
 
@@ -273,6 +359,14 @@ print("Expected: 1 hours, 4 minutes, 7 seconds")
 print()
 
 # Write your code here:
+time = 3847                     #assigning initial variable value
+hours = time // 3600            #calculating hours
+time = time - (hours * 3600)    #updating variable value
+minutes = time // 60            #calculating minutes
+time = time - (minutes * 60)    #updating variable value
+seconds = time % 60             #calculating seconds
+
+print(hours, 'hours,', minutes, 'minutes,', seconds, 'seconds')     #printing the output
 
 
 
@@ -288,6 +382,13 @@ print("Be creative with your story structure!")
 print()
 
 # Write your code here:
+adjective = 'crazy'     #assigning variables on this line and the next 4
+noun = 'microwave'
+verb = 'run'
+place = 'Northeastern University'
+number = 17
+
+print('One', adjective, 'day, I decided to take my', noun, 'and', verb, 'all the way to', place, '. I couldn’t believe it when I saw', number, 'people doing the same thing!') #printing the output
 
 
 

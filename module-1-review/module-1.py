@@ -9,7 +9,8 @@ print(name)    # Output: Alice
 
 
 # Challenge: Create a variable with a value and print it.
-
+last_name = 'Bakari'
+print(last_name)
 
 
 
@@ -30,6 +31,20 @@ print("Quotient:", quotient)           # Output: 3.333...
 print("Remainder:", remainder)         # Output: 1
 
 # Challenge: Perform arithmetic operations on two numbers and print the results.
+x = 5
+y = 3
+
+add = x + y 
+subtract = x - y
+multiply = x * y 
+divide = x / y 
+remainder = x % y
+
+print('x + y = ', add)
+print('x - y = ', subtract)
+print('x * y = ', multiply)
+print('x / y = ', divide)
+print('x % y = ', remainder)
 
 
 
@@ -43,6 +58,11 @@ print(full_greeting)   # Output: Hello, Alice!
 
 # Challenge: Concatenate three strings and print the result.
 
+word1 = 'My'
+word2 = 'name is'
+word3 = 'Raissa!'
+
+print(word1 + ' ' + word2 + ' ' + word3)
 
 
 # Combining variables and expressions
@@ -54,6 +74,11 @@ message = "The sum of " + str(num1) + " and " + str(num2) + " is " + str(result)
 print(message)  # Output: The sum of 8 and 2 is 10
 
 # Challenge: Add two numbers and print the result using string concatenation.
+x = 10
+y = 7
+answer = x + y 
+
+print('The sum of ' + str(x) + ' and ' + str(y) + ' is ' + str(answer))
 
 
 
@@ -108,6 +133,17 @@ print("Is student (boolean):", is_student)
 print("Is graduated (boolean):", is_graduated)
 
 # Challenge: Create one variable of each data type and print them with labels.
+age: int = 20
+print('Age (integer) = ', age)
+
+price: float = 3.95
+print('Chips Price (float) = ', price)
+
+middle_name: str = 'Aydina'
+print('Middle Name (string) = ', middle_name)
+
+is_tall = False
+print('Tall (boolean) = ', is_tall)
 
 
 
@@ -134,7 +170,11 @@ print("Course code:", course_code)
 # class = "CS5001"     # 'class' is a reserved word
 
 # Challenge: Create 3 variables with descriptive names for a student record.
+student_last_name = 'Bakari'
+student_enrollment_semester = 'Fall 2025'
+student_in_progress_credits = 8
 
+print(student_last_name +' | Enrolled in ' + student_enrollment_semester + ', taking ' + str(student_in_progress_credits) + ' credits.')
 
 
 
@@ -163,6 +203,12 @@ calculation_with_parens = (2 + 3) * (4 ** 2 - 1)
 print("(2 + 3) * (4 ** 2 - 1) =", calculation_with_parens)  # = 5 * 15 = 75
 
 # Challenge: Calculate the area of a triangle: (base * height) / 2
+base = 1
+height = 2
+
+triangle_area = (base * height) / 2
+
+print(triangle_area)
 
 
 
@@ -194,6 +240,12 @@ area_message = f"A rectangle with width {width} and height {height} has area {wi
 print("Calculation:", area_message)
 
 # Challenge: Use f-strings to create a message about a book with title, author, and page count.
+name = 'The Fellowship of the Ring'
+author = 'J.R.R. Tolkien'
+pages = 500
+book_message = f'The book {name} was written by {author} and has a page count of {pages}'
+
+print(book_message)
 
 
 
@@ -223,6 +275,12 @@ birth_year = 2025 - age_as_number
 print(f"You were probably born in {birth_year}")
 
 # Challenge: Create a program that calculates someone's birth year from their age.
+age = int(input('Please input your age: '))
+current_year = int(input('Please input the current year: '))
+
+birth_year = current_year - age
+
+print('You were probably born in', birth_year)
 
 
 
@@ -268,6 +326,23 @@ print("-" * 20)
 print(f"TOTAL:        ${total:>6.2f}")
 
 # Challenge: Create a shopping receipt for 4 items with tax and discount.
+eggs = 3.00
+milk = 4.99
+chicken = 10.99
+mangoes = 4.35
+
+tax = 0.08
+discount = 0.1
+
+total = eggs + milk + chicken + mangoes
+tax = total * tax
+total = tax + total
+discount = total * discount
+total = total - discount
+
+print(total)
+
+
 
 
 
