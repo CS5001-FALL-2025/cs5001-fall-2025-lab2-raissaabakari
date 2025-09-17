@@ -19,7 +19,7 @@ print("Date: 9/17/2025")
 print("=" * 40)
 
 # =============================================================================
-# MULTIPLE CHOICE QUESTIONS 
+# MULTIPLE CHOICE QUESTIONS  
 # =============================================================================
 
 print("\nMULTIPLE CHOICE: Choose the best answer")
