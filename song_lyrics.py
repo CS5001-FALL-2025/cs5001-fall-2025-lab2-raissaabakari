@@ -22,7 +22,7 @@ def main():
     word7 = "liar,"
     word8 = "my"
     word9 = "favorite"
-    word10 = "liar"
+    word10 = "liar!"
 
     print(word1 + ' ' + word2 + ' ' + word3 + ' ' + word4 + ' ' + word5 + ' ' + word6 + ' ' + word7 + ' ' + word8 + ' ' + word9 + ' ' + word10)
 
