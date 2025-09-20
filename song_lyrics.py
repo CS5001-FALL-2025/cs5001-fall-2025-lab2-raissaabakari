@@ -13,7 +13,7 @@ lyric on one single line using print.
 
 def main():
     # YOUR CODE HERE
-    word1 = "... all"
+    word1 = "All"
     word2 = "now"
     word3 = "anyways,"
     word4 = "you're"
@@ -24,7 +24,7 @@ def main():
     word9 = "favorite"
     word10 = "liar!"
 
-    print(word1 + ' ' + word2 + ' ' + word3 + ' ' + word4 + ' ' + word5 + ' ' + word6 + ' ' + word7 + ' ' + word8 + ' ' + word9 + ' ' + word10)
+    print(f'{word1} {word2} {word3} {word4} {word5} {word6} {word7} {word8} {word9} {word10}')
 
 
 if __name__ == '__main__':
