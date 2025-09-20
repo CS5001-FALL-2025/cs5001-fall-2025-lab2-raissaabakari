@@ -22,7 +22,6 @@ def main():
     print('  + +  ')
     print(' +   + ')
     # YOUR CODE HERE
-
     print('+-----+')
     print('| .-. |')
     print('| | | |')
